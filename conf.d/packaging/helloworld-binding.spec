@@ -24,7 +24,6 @@ Source0: %{name}-%{version}.tar.gz
 Requires: afb-binder
 
 BuildRequires: afm-rpm-macros
-BuildRequires: break build
 BuildRequires: cmake
 BuildRequires: gcc gcc-c++
 BuildRequires: afb-cmake-modules
