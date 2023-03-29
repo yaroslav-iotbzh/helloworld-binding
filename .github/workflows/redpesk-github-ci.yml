@@ -22,6 +22,9 @@ jobs:
           factory-url: "$RP_REMOTE_FACTORY_URL"
           factory-token: "$RP_REMOTE_FACTORY_TOKEN"
 
+      - name: Debug test
+        run: cat $HOME/.redpesk/rp-cli/access_token.json
+
       - name: Change branch in factory to source branch
         run: rp-cli applications update "$RP_FACTORY_APP" -p "$RP_FACTORY_PROJECT" --source-rev "$GH_SOURCE_BRANCH"
 
