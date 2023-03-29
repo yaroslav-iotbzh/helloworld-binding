@@ -4,7 +4,7 @@ on: [pull_request, workflow_dispatch]
 
 env:
   RP_REMOTE_FACTORY_URL: 'https://community-app.redpesk.bzh'
-  RP_REMOTE_FACTORY_TOKEN: ${{ secrets.RP_REMOTE_FACTORY_TOKEN }}
+  RP_REMOTE_FACTORY_TOKEN: ${{ secrets.RP_REMOTE_FACTORY_TOKEN_SECRET }}
   RP_FACTORY_PROJECT: 'validate-cations-2'
   RP_FACTORY_APP: 'validate actions'
   GH_SOURCE_BRANCH: ${{ github.head_ref }}
